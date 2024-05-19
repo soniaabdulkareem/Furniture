@@ -1,0 +1,242 @@
+@media screen and (min-width:400px) {
+
+    /* category */
+   
+    .offer .discount{
+        height: 300px;
+    }
+    /* footer */
+    footer .end{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:500px) {
+    /* category */
+    .category  .arrow{
+        height: 490px;
+    }
+   
+    .offer .discount{
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width:767px) {
+
+
+
+    header{
+        height: 110vh;
+    }
+
+    /* navigation bar */
+    .navbar{
+        display: none;
+    }
+    .nav-big{
+        display: flex;
+        justify-content:space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 15px;
+    }
+    .nav-big .logo{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .nav-big .logo p{
+        color: white;
+        font-size: 20px;
+    }
+
+    .nav-big .nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    .nav-big .nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .nav-big .nav ul li a{
+        color: white;
+    }
+
+    .nav-big .nav button{
+        background-color: rgb(208, 207, 207);
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        
+    }
+    .nav-big .nav button a{
+        color: black;
+        font-size: 14px;
+    }
+
+    /* cta */
+
+    header .cta h1{
+        font-size:35px;
+        width: 50%;
+        line-height: 1.2;
+        
+    }
+    
+    header .cta p{
+        width: 60%;
+    }
+    header .cta button{
+        background-color: #EA953A;
+        border: none;
+        border-radius: 30px;
+        padding : 10px 40px ;
+    }
+    header .cta button a{
+        color: white;
+        font-size: 12px;
+    }
+
+
+    /* features */
+
+
+    .features .achievement-board{
+        justify-content: space-evenly;
+        padding-top:20px;
+        padding-bottom: 20px;
+        top: 100%;
+        width: 80%;
+        position: absolute;
+        left: 5%;
+        
+    }
+
+    .features .wwd .row-text{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        height: 400px;
+    }
+    .features .wwd .row{
+        display: none;
+    }
+
+    .features .wwd .row-text-items {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 45%;
+    }
+    .features .wwd  .big-img{
+        display: flex;
+        background-image: url(images/istockphoto-1493282247-612x612.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70%;
+        height: inherit;
+    }
+
+
+    /* categories */
+    .category  .arrow{
+        height: 520px;
+    }
+   
+
+    /* articles section */
+
+    .Article .article-row-2 {
+        display: flex;
+        flex-direction: row;
+
+        
+    }
+    .Article .article-row-2 .first{
+        display: none;
+    }
+    .Article .article-row-2 .sec{
+        background-image: url(images/beautiful-yellow-sofa-with-black-white-pillows-gray-wall_210259-55.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 60%;
+        display: flex;
+       
+    }
+   
+    .Article .article-row-2 .more{
+       width: 60%;
+       
+    }
+    .Article .article-row .image1 .image1-text{
+       margin-top: 30%;
+    }
+
+
+    .Article .article-row .image2 .image2-text{
+        margin-top: 30%;
+    }
+
+    /* reviews */
+    .reviews{
+        display: flex;
+        flex-direction: row;
+       
+       
+    }
+    .reviews .review-img {
+       width: 50%;
+       height: 350px;
+    }
+    .reviews .testimonial {
+        padding-top: 5%;
+        width: 50%;
+        height: 350px;
+        padding-bottom: 10%;
+     
+    }
+    
+    /* offers */
+
+   
+   
+    .offer .discount h3{
+        font-size: 20px;
+        margin-left:5% ;
+        line-height: 1.5;
+    }
+    .offer .discount .con {
+        padding-bottom: 30%;
+    }
+    
+    .offer .discount .con input{
+        width: 30%;
+    }
+    .offer .discount .con input::placeholder{
+        font-size: 12px;
+    }
+    
+    
+    .offer .discount .con button a{
+        font-size: 12px;
+    }
+   
+    
+
+
+}
+
+@media screen  and (min-width:820px) {
+    .category  .arrow{
+        height: 540px;
+        left: 96%;
+    }
+   
+}

@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: "outfit", sans-serif;
+  
+}
+.container{
+    max-width: 1900px;
+}
+
+header{
+    background-image: url(images/mid-century-modern-living-room-interior-design-with-monstera-tree.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    height: 90vh;
+    position: relative;
+}
+/* nav bar */
+
+.nav-big{
+    display: none;
+}
+header .navbar .navbar__header{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+header .navbar .navbar__header .logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    
+    
+}
+header .navbar .navbar__header .logo p{
+    color: white;
+    font-size: 20px;
+}
+
+
+header .navbar .navbar__header .navbar__btn{
+    align-self: center;
+    cursor: pointer;
+}
+  
+header .navbar .navbar__header .navbar__btn .bar1,.bar2,.bar3{
+    width: 35px;
+    height:4px;
+    margin: 0.5rem;
+    background: white;
+    
+}
+  
+  
+.navbar__links{
+    background-color: rgb(255, 254, 254);
+    list-style-type: none;
+    transition: all 2s ease;
+    position: absolute;
+    padding-left: 10px;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+  
+.navbar__collapse{
+    height: 200px;
+    width: 100%;
+}
+  
+.navbar__single-link{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+    cursor: pointer; 
+}
+  
+.navbar__single-link:hover{
+    padding-left: 1.5rem;
+    
+}
+
+
+
+/* cta */
+
+header .cta{
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+header .cta h1{
+    color: white;
+    font-size:27px;
+    margin-bottom: 3%;
+}
+
+header .cta p{
+    color: black;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+header .cta button{
+    background-color: #EA953A;
+    border: none;
+    border-radius: 30px;
+    padding : 10px 40px ;
+}
+header .cta button a{
+    color: white;
+    font-size: 12px;
+}
+
+/* section */
+
+.features .achievement-board{
+    background-color:#286f6c ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    position: absolute;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 82%;
+    
+}
+.features .achievement-board .list{
+    color: white;
+    text-align: center;
+}
+.features .achievement-board .list h2{
+    font-size: 18px;
+}
+.features .achievement-board .list p{
+    font-size: 10px;
+    
+}
+.features .achievement-board .vl{
+    background-color: aliceblue;
+    width: 0.1rem;
+    height: 50px;
+}
+
+
+
+
+
+.features .wwd .row img{
+    width: 100%;
+    margin-bottom: 0;
+}
+.features .wwd .row .big-img{
+    display: none;
+}
+.features .wwd .row-text{
+    background-color: #DBDCE0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+   
+   
+}
+.features .wwd .row-text-items {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5rem;
+}
+.features .wwd .row-text-items h3{
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+.features .wwd .row-text-items p{
+    font-size: 12px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.features .wwd .row-text-items .check h3{
+    font-size: 15px;
+    margin-top: 2%;
+}
+.features .wwd .row-text-items .check .fa-circle-check{
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 3px;
+}
+.features .wwd .row-text-items .check p{
+    font-size: 12px;
+    margin-left: 5%;
+    line-height: 1.5;
+}
+
+/* category section */
+
+.category {
+    background-color: white;
+    position: relative;
+    height: 430px;
+   
+}
+.category .col{
+    background-color: white;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.category .col .sub-title h3{
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+.category .col .category-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    overflow-x: scroll;
+    
+}
+.category .col .category-row::-webkit-scrollbar{
+    display: none;
+}
+.category .col .category-row .list-item img{
+    width: 200px;
+    border-radius: 20px;
+}
+.category .col .category-row .list-text{
+    text-align: center;
+}
+.category .col .category-row .list-text p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 2%;
+}
+.category  .arrow{
+    position: absolute;
+    background-color: #e0dbdc51;
+    width: 40px;
+    height: 470px;
+    left: 92%;
+    z-index: 2;
+}
+.category   .arrow svg{
+    fill: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+
+
+/* Article section */
+
+.Article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    
+}
+.Article .article-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+   
+}
+.Article .article-row .image1{
+    background:rgba(0, 0, 0, 0.8) url(images/empty-modern-room-with-furniture_23-2149178327.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 300px;
+    width: 50%;
+    position: relative;
+}
+
+.Article .article-row .image1 .image1-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-top: 45%;
+   
+}
+
+.Article .article-row svg{
+    fill: white;
+    width: 20px;
+}
+.Article .article-row .image2{
+    background:rgba(0, 0, 0, 0.8) url(images/stylish-round-green-velvet-armchair-modern-interior-soft-selective-focus_182920-2424.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 300px;
+    width: 50%;
+    
+}
+.Article .article-row .image2 .image2-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-top: 45%;
+    
+}
+
+.Article .article-row  p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+
+.Article .article-row-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Article .article-row-2 .first{
+    background-image: url(images/beautiful-yellow-sofa-with-black-white-pillows-gray-wall_210259-55.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+   
+}
+.Article .article-row-2 .more{
+    background-color:  #DBDCE0;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+.Article .article-row-2 .more h1{
+    font-size: 22px;
+}
+.Article .article-row-2 .more p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Article .article-row-2 .more button{
+    background-color:rgba(119, 120, 121, 0.448) ;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+.Article .article-row-2 .more button a{
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.Article .article-row-2 .sec{
+    display: none;
+}
+
+
+/* reviews section */
+
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ 
+}
+.reviews .review-img {
+    background-image: url(images/illustration-living-room-interior_252025-51003.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+   
+}
+.reviews .testimonial {
+    padding-top: 5%;
+    background-color: #DBDCE0;
+    padding-left: 5%;
+    padding-bottom: 13%;
+    height: 250px; 
+   
+}
+.reviews .testimonial h2{
+    font-size: 20px; 
+}
+.reviews .testimonial .quote p{
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+.reviews .testimonial .customer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    padding-top: 5%;
+}
+.reviews .testimonial .customer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.reviews .testimonial .customer p{
+    line-height: 1.5;
+}
+.reviews .next {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    margin-top: 5%;
+}
+.reviews .next svg{
+    width: 35px;
+}
+#svg1{
+    fill: grey;
+    width: 35px;
+}
+
+/* offers */
+
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  
+   
+    
+    
+    
+}
+.offer .discount{
+    background-image: url(images/download.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-color:#ADBBAE;
+    width: 80%;
+    height:inherit;
+ 
+    
+     
+}
+
+.offer .discount h3{
+    font-size: 18px;
+    margin-left:5% ;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+.offer .discount p{
+    margin-left:5% ;
+    margin-bottom: 5%;
+}
+.offer .discount .con{
+    margin-left:5% ;
+    display: flex;
+    gap: 8px;
+    padding-bottom: 10%;
+
+}
+.offer .discount .con input{
+    background-color: inherit;
+    border: 1px solid black;
+    padding: 10px ;
+    border-radius: 20px;
+    width: 60%;
+}
+.offer .discount .con input::placeholder{
+    color: black;
+    font-size: 10px;
+}
+.offer .discount .con button{
+    background-color: inherit;
+    border: 1px solid black;
+    padding:8px 18px;
+    border-radius: 20px;
+}
+
+.offer .discount .con button a{
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+/* footer */
+
+
+footer{
+    background-color:#ADBBAE;
+    height: 400px;
+}
+footer .sub-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+footer .sub-head h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+footer .sub-head .socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+footer .sub-head .socials img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+footer .end{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+footer .end h2{
+    font-size: 14px;
+    margin-bottom: 8%;
+}
+footer .end li{
+    font-size: 12px;
+    line-height: 1.8;
+}
